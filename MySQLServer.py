@@ -12,8 +12,8 @@ try:
     )
     if connection.is_connected():
         cursor = connection.cursor()
-        cursor.execute(f"CREATE DATABASE IF NOT EXISTS {'alx_book_store'}")
-        print(f"Database '{'alx_book_store'}' created successfully or already exists.")
+        cursor.execute(f"CREATE DATABASE IF NOT EXISTS {database}")
+        print(f"Database '{database}' created successfully or already exists.")
 
 except Error as e:
     print(f"Error: {e}")
